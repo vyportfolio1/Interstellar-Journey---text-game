@@ -148,7 +148,7 @@ const scenes = {
         ]
     },
     trustAlien: {
-        text: "You trust the alien. Together, you fix your ship.",
+        text: "You trust the alien and he fix your ship.",
         image: "trust.png",
         choices: [
             { text: "Explore alone", next: "exploreForestAlone" },
@@ -163,7 +163,7 @@ const scenes = {
         ]
     },
     stayWithChewbacca: {
-        text: "You stay with the alien and fix your ship. You decide to stay and explore the planet together. Thanks for playing.",
+        text: "You stay with the alien and who fix your ship. You decide to stay and explore the planet together. Thanks for playing.",
         image: "leaving.png",
         choices: [
             { text: "Start Again", next: "start" }
