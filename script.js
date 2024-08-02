@@ -37,7 +37,7 @@ const scenes = {
         text: "You are Narty McFly, a space explorer. Your ship crashes on Astra-7. The planet appears similar to Earth but is silent and dense with forest. You wake up in the wreckage.",
         image: "crashsite.png",
         choices: [
-            { text: "Continue", next: "scene2" },
+            { text: "Explore enviroment", next: "scene2" },
             { text: "Stay in the ship", next: "stayInShip" }
         ]
     },
@@ -49,11 +49,11 @@ const scenes = {
         ]
     },
     scene2: {
-        text: "You wake up after crashing. What do you do?",
+        text: "It's getting dark. The forest is scary and full of unknown sounds. What do you do?",
         image: "crashsite.png",
         choices: [
             { text: "Wait for help", next: "waitForHelp" },
-            { text: "Explore", next: "explore" }
+            { text: "Explore further", next: "explore" }
         ]
     },
     waitForHelp: {
@@ -163,19 +163,13 @@ const scenes = {
         ]
     },
     stayWithChewbacca: {
-        text: "You stay with the alien and who fix your ship. You decide to stay and explore the planet together. Thanks for playing.",
+        text: "You stay with the alien who fixes your ship. You decide to stay and explore the planet together. **Thanks for playing!**",
         image: "leaving.png",
         choices: [
             { text: "Start Again", next: "start" }
         ]
     },
-    thanks: {
-        text: "<span id='thanks-text'>Thanks for playing! The end.</span>",
-        image: "thanks.png",
-        choices: [
-            { text: "Start Again", next: "start" }
-        ]
-    }
+
 };
 
 function playSound(sound) {
